@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("https://i.imgur.com/LFUOfxQ.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.glass-bg {
+  backdrop-filter: blur(10px) brightness(0.9);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 10px 10px 40px 10px rgba(221, 217, 217, 0.507);
+  color: black;
+  height: 80%;
+}
+
+.album-cover {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.player-header {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.progress-section {
+  margin: 20px 0;
+}
+
+.progress-section input {
+  width: 100%;
+}
+
+.controls button {
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.controls button:hover {
+  color: #ccc;
+}
+
+@media (max-width: 576px) {
+  .glass-bg {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .glass-bg {
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .glass-bg {
+    width: 400px;
+  }
+}
+
+.controls {
+  padding: 0px 10px 40px 10px;
+}
